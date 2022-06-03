@@ -26,6 +26,9 @@ body {
 .container {
   background-color: whitesmoke;
   padding: 20px;
+  -webkit-box-shadow: 10px 6px 14px -1px rgba(54, 53, 53, 0.75);
+  -moz-box-shadow: 10px 6px 14px -1px rgba(45, 45, 45, 0.75);
+  box-shadow: 10px 6px 14px -1px rgba(44, 43, 43, 0.75);
 }
 
 footer {
@@ -55,13 +58,32 @@ header button {
 
 .favorite-container {
   padding: 1rem;
-}
-
-.favorite-meals {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.favorite-meals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   padding: 0;
+}
+
+.favorite-meals li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.favorite-meals li img {
+  height: 80px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover;
 }
