@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe App</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <script src="/script.js" defer></script>
   </head>
   <body>
@@ -12,5 +16,49 @@
     <section class="container">
       <p>A food app with a catalogue of recipes.</p>
     </section>
+
+    <div class="container">
+      <header>
+        <input type="text" />
+        <button id="search">Search</button>
+      </header>
+      <div class="favorite-container">
+        <h3>Favorite meals</h3>
+        <ul>
+          <li>
+            <img
+              src="/assets/baiq-daling-ykThMylLsbY-unsplash.jpg"
+              alt=""
+            /><span>Rice</span>
+          </li>
+          <li>
+            <img
+              src="/assets/khloe-arledge-ND3edEmzcdQ-unsplash.jpg"
+              alt=""
+            /><span>Bowl of meat and sauce</span>
+          </li>
+          <li>
+            <img
+              src="/assets/khloe-arledge-V7hibs9xhe4-unsplash.jpg"
+              alt=""
+            /><span>Bowl of vegetables</span>
+          </li>
+        </ul>
+      </div>
+      <div class="meals">
+        <span class="random"> Random Recipe </span>
+        <div class="meal">
+          <div class="meal-header">
+            <img src="/assets/photo-1519708227418-c8fd9a32b7a2.webp" alt="" />
+          </div>
+          <div class="meal-body">
+            <h4>Veggie Veggies</h4>
+            <button>
+              <i class="fa-react fa-heart"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
